@@ -51,5 +51,9 @@
     "version": "npm run bower-version-update && git add bower.json",
     "postversion": "git push --tags origin master && npm publish"
   },
-  "main": "js/jquery.fileupload.js"
+  "main": "js/jquery.fileupload.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
 }
