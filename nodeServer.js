@@ -56,7 +56,7 @@ var removeJSON = {
     ]
 }
 
-
+//https://www.cnblogs.com/kidney/p/6052935.html?utm_source=gold_browser_extension
 var app = express();
 app.use(express.static(__dirname));
 app.get('/', function (req, res) {
