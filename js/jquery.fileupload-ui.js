@@ -165,6 +165,9 @@
             },
             // Callback for successful uploads:
             done: function (e, data) {
+                console.log("进到了成功里面");
+                console.log(data.getFilesFromResponse(data))
+                //当数据校验错误时可以获取到res内容
                 if (e.isDefaultPrevented()) {
                     return false;
                 }
@@ -215,6 +218,7 @@
             },
             // Callback for failed (abort or error) uploads:
             fail: function (e, data) {
+                console.log("进到了失败里面")
                 if (e.isDefaultPrevented()) {
                     return false;
                 }
